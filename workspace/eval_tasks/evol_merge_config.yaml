@@ -1,0 +1,12 @@
+genome:
+    models:
+      - HODACHI/EZO-Common-9B-gemma-2-it
+      - HODACHI/EZO-Humanities-9B-gemma-2-it
+      - HODACHI/EZO-SP-9B-gemma-2-it-2
+      - HODACHI/EZO-SP-9B-gemma-2-it-3
+    merge_method: linear
+    layer_granularity: 4 # sane default
+    allow_negative_weights: true # useful with task_arithmetic
+tasks:
+  - name: elyzatasks100
+    weight: 1.0
